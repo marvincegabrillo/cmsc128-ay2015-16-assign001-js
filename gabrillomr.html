@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Programming Assignment </title>
+</head>
+<body>
+	<h1>Programming Assignment </h1>
+	<div>
+		<input type="radio" id="1"name="choice" value="numToWords"> Number to Words 
+		<input type="radio" id="2" name="choice" value="wordsToNum"> Words to Number 
+		<input type="radio" id="3" name="choice" value="wordsToCurr"> Words to Currency 
+		<input type="radio" id="4" name="choice" value="numDelimited"> Number Delimited 
+	</div>
+
+	<button onclick="choose()">Go</button>
+	
+	<div id="div1" style="display: none"; class="input">
+		Enter Whole number <br>
+		<input type="text" id="varIn1"><br>
+		Whole number to word <br>
+		<input type="text" id="varOut1"><br>
+		<button onclick="numToWords()">Number to words</button>
+	</div>
+
+	<div id="div2" style="display: none"; class="input">
+		Enter numbers (in word)<br>
+		<input type="text" id="varIn2"><br>
+		Word to number<br>
+		<input type="text" id="varOut2"><br>
+		<button onclick="wordsToNum('varIn2', 'varOut2')">Words to number!</button>
+	</div>
+
+	<div id="div3" style="display: none"; class="input">
+		Enter number (in words) <br>
+		<input type="text" id="varIn3"><br>
+		Enter currency (USD, JPY, PHP)<br>
+		<input type="text" id="varIn4"><br>
+		Words to currency<br>
+		<input type="text" id="varOut3"><br>
+		<button onclick="wordsToCurr('varIn3', 'varOut3')">Words to currency!</button>
+	</div>
+
+	<div id="div4" style="display: none"; class="input">
+		Enter number<br>
+		<input type="text" id="varIn5"><br>
+		Enter delimiter<br>
+		<input type="text" id="varIn6"><br>
+		Enter number of jumps<br>
+		<input type="text" id="varIn7"><br>
+		Number delimited<br>
+		<input type="text" id="varOut4"><br>
+		<button onclick="numDelimited()">Number delimited!</button>
+	</div>
+	<script type="text/javascript" src="gabrillomr.js"></script>
+</body>
+</html>
